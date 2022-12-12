@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fugaz+One&family=Lobster&family=Volkhov:wght@700&display=swap');
+:root{
+    --cream: #f7e9dc;
+    --light_cream: #fffcf7;
+    --salmon: #ec755d;
+    --light_salmon: #ff9b87;
+    --brown: #3a2313;
+    --light_brown: #b67a4e;
+    --blue: #83e1ee;
+    --baby_blue: #b4dfe5;
+    --extra_small: 10px;
+    --small_txt: 13px;
+    --medium_txt: 24px;
+    --tall_txt: 30px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cream);
+}
+
+/* section 1 */
+.div--section1{
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1{
+    width: 360px;
+    height: 80px;
+    color: var(--light_cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--salmon);
+}
+
+article h3{
+    font-size: var(--small_txt);
+    font-weight: 400;
+}
+
+article p{
+    font-size: var(--medium_txt);
+    font-weight: 700;
+}
+
+figure img{
+    width: 50px;
+}
+
+/* section 2 */
+.section2{
+    margin-top: 20px;
+    width: 360px;
+    height: 320px;
+    display: flex;
+    font-size: var(--small_txt);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--light_cream);
+    color: var(--brown);
+}
+
+.div--section2{
+    width: 320px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.daysAndExpenses{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.barContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--extra_small);
+}
+
+.paragraphBar{
+    background-color: var(--brown);
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: var(--small_txt);
+    color: var(--cream);
+    visibility: hidden;
+}
+
+.bar{
+    width: 31px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--salmon);
+    margin-bottom: 2px;
+}
+
+/* individual bar sizes */
+.barTue{
+    height: 50px;
+}
+.barWed{
+    height: 90px;
+}
+.barThu{
+    height: 40px;
+}
+.barSat{
+    height: 70px;
+}
+
+.bar:hover{
+    background-color: var(--baby_blue);
+}
+
+/* so that each of the expenses appears */
+#bar1:hover .paragraphBar{
+    visibility: visible;
+}
+#bar2:hover .paragraphBar{
+    visibility: visible;
+}
+#bar3:hover .paragraphBar{
+    visibility: visible;
+}
+#bar4:hover .paragraphBar{
+    visibility: visible;
+}
+#bar5:hover .paragraphBar{
+    visibility: visible;
+}
+#bar6:hover .paragraphBar{
+    visibility: visible;
+}
+#bar7:hover .paragraphBar{
+    visibility: visible;
+}
+
+/* total and last month */
+hr{
+    color: var(--light_brown);
+}
+
+.totalAndlastMonth{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.totalAndlastMonth h2{
+    font-size: var(--tall_txt);
+}
+
+.totalAndlastMonth h3{
+    text-align: end;
+}

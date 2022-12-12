@@ -1,0 +1,108 @@
+:root{
+    --Soft_red:  hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark_desaturated_cyan: hsl(167, 40%, 24%);
+    --Dark_blue: hsl(198, 62%, 26%);
+    --Dark_moderate_cyan: hsl(168, 34%, 41%);
+}
+
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*header*/
+header{
+    background-image: url(./images/naranja.jpeg);
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div h1{
+    font-size: 28px;
+}
+
+div li{
+    font-size: 23px;
+    padding: 10px;
+}
+
+li:hover{
+    background-color: rgba(240, 248, 255, 0.358);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section span{
+    margin-top: 25px; 
+}
+
+section h1{
+    margin-top: 120px;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+nav ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+
+/*Main */
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 60px;
+
+}
+
+article h2{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+article a{
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 18px;
+    color: black;
+    border-bottom: 2px solid var(--Yellow);
+    width: 25%;
+    transition: linear;
+}
