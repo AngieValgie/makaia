@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fugaz+One&family=Lobster&family=Volkhov:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    border: 2px solid #dbcbbc;
+    border-radius: 20px;
+}
+
+.card_image{
+    width: 100%;
+    height: 130px;
+    border-radius: 17px 17px 0 0;
+    object-fit: cover;
+}
+
+.card__title{
+    font-weight: bold;
+}
+
+.card__name{
+     font-weight: normal;
+}
+
+.card__status{
+    border-radius: 10px;
+}
+
+.succes{
+    background-color: #2ecc71;
+    padding: 1px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.danger{
+    background-color: #e74c3c;
+    padding: 1px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.primary{
+    background-color:#789199;
+}
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    gap: 4px;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+#navar{
+    background-color:#dbcbbc;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+#title{
+    color: #fff;
+}
+
+.btnNew{
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: #789199;
+    border-radius: 6px;
+}
+
+#form__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form input{
+    border: none;
+    border-bottom: 2px solid #dbcbbc;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.vaccine__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.vaccine__container p{
+    font-weight: bold;
+}
