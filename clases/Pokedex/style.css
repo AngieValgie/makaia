@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fugaz+One&family=Lobster&family=Volkhov:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    --ligthGray: #E3DFDE;
+    --purple: #9350B1;
+    --ligthPurple: #F8E4F5;
+}
+
+body{
+    background-color: var(--ligthGray);
+    padding: 25px;
+    min-width: 600px;
+}
+
+.encabezado{
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.encabezado figure img{
+    width: 50px;
+}
+
+.baby h2{
+    
+}
