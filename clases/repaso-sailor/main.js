@@ -1,16 +1,16 @@
 const pets = [
     {
-        name : 'Selena',
+        name : 'Serena',
         age : '15 años',
         breed : 'Alien',
-        vaccines: true,
+        vaccines: false,
         image : 'https://i.pinimg.com/564x/6e/74/50/6e745063e0650f23c934abc6378a1758.jpg'
     },
     {
         name : 'Rei',
         age : '17 años',
         breed : 'Humana',
-        vaccines: false,
+        vaccines: true,
         image : 'https://64.media.tumblr.com/38070d47d6f9b3937af352cc0f73bc37/98e5fc25c3059ca4-dd/s640x960/2b86590506a0744d1dd61738f7daf80731ac0d7d.jpg'
     }
 ]
@@ -40,7 +40,7 @@ const renderCards = () => {
 
                 <p class="card__title">Raza: <span class="card__name"> ${pet.breed}</span></p>
 
-                <p class="card__title">Vacunas: <span class="card__name ${pet.vaccines ? 'succes' : 'danger'}"> ${pet.vaccines ? 'Al día' : 'Pendiente'} </span></p>
+                <p class="card__title">Exámenes: <span class="card__name ${pet.vaccines ? 'succes' : 'danger'}"> ${pet.vaccines ? 'Al día' : 'Pendiente'} </span></p>
             </div>
         </article>
         `
@@ -81,3 +81,10 @@ const handleSubmit = (e) => {
 form.addEventListener('submit', (e) => {
   handleSubmit(e);
 })
+
+//localStorage.setItem('name', 'rei');
+//sessionStorage.setItem('name', 'rei');
+
+/* const name = localStorage.getItem('name');
+document.write(name);  */
+
