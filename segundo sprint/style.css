@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fugaz+One&family=Lobster&family=Space+Grotesk:wght@500&family=Volkhov:wght@700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrayishViolet: hsl(270, 3%, 87%);
+    --DarkGrayishViolet: hsl(279, 6%, 55%);
+    --VeryDarkViolet: hsl(278, 68%, 11%);
+    --RedInputErrors: hsl(0, 100%, 66%);
+    --hva: hsl(249, 99%, 64%);
+    --cfb: hsl(278, 94%, 30%);
+    --small: 10px;
+    --medium: 18px;
+}
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.809);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* targetas */
+aside{
+    background-image: url(images/bg-main-desktop.png);
+    width: 90%;
+    height: 100vh;
+    color: var(--White);
+    position: relative;
+}
+
+/* targeta parte frontal */
+#figure1{
+    background-image: url(images/bg-card-front.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 20px;
+    top: 115px;
+    left: 30%;
+    border-radius: 10px;
+    height: 180px;
+    width: 350px;
+}
+
+/* trageta parte posterior */
+#figure2{
+    background-image: url(images/bg-card-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    border-radius: 10px;
+    height: 180px;
+    width: 350px;
+}
+
+#figure2 p{
+    position: absolute;
+    left: 270px;
+    top: 84px;
+}
+
+/* partes del formulario */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form{
+    width: 270px;
+    
+}
+
+.formItems{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.formItems input{   
+    color: var(--LightGrayishViolet);
+    padding: 10px;
+    border-radius: 6px;
+    height: 35px;
+}
+
+.formItems label{
+    font-size: var(--small);
+    letter-spacing: 1px;
+}
+
+.formItems--expDate input{
+    width: 60px;
+}
+
+button{
+    color: var(--White);
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #21092f;
+}
