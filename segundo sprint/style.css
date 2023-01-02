@@ -128,7 +128,7 @@ main{
 }
 
 .formItems--expDate input{
-    width: 50px;
+    width: 62px;
 }
 
 .cvc{
@@ -156,8 +156,26 @@ button{
 }
 
 .message{
-    font-size: small;
+    font-size: var(--small);
     color: var(--RedInputErrors);
+}
+
+/* pantalla de completado */
+#compliteContainer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 60px 40px 90px;
+    align-items: center;
+    justify-items: center;
+}
+
+#compliteContainer h1{
+    letter-spacing: 3px;
+}
+
+#compliteContainer p{
+    color: var(--DarkGrayishViolet);
 }
 
 @media (max-width: 956px) {

@@ -8,7 +8,7 @@ const buttonsContainer = document.getElementById('buttonsContainer')
 const selected =  document.getElementById('selected')
 let numero;
 
-selected.style.display = 'none'
+selected.style.display = 'none';
 
 button.addEventListener('click', calificacion)
 
