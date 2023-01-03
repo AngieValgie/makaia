@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fugaz+One&family=Lobster&family=Poppins:wght@300;400;500&family=Roboto:wght@300&family=Space+Grotesk:wght@500&family=Volkhov:wght@700&display=swap');
+
+:root{
+    --blue: #2a41e8;
+    --orange: #ff5e14;
+    --ligthGray: #8c8c8c;
+    --darkGray: #151515;
+    --black: #111111;
+    --withe: #ffffff;
+    --veryLigthGray: #f3f3f3;
+    --small: 10px;
+    --medium: 14px;
+    --large: 28px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--withe);
+}
+
+/* barra de navegación */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    padding-left: 30px;
+    width: 160px;
+}
+
+.fav{
+    border-left: 2px solid var(--veryLigthGray);
+    height: 100%;
+    padding: 30px;
+}
+
+.fav:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+/* buscador de propiedades */
+.main__searcher{
+    color: var(--withe);
+    background-image: url(img/hero-bg-image.jpg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__searcher--div h1{
+    font-size: var(--large);
+}
+
+/* targetas con las propiedades */
+.main__properties{
+
+}
+
+/* casa en venta */
+.main__hotDeal{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__hotDeal p{
+    font-size: var(--small);
+    color: var(--ligthGray);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.HouseForSale figure{
+    background-image: url(img/house4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+}
+
+.HouseForSale__div{
+    background-color: var(--darkGray);
+    width: 90vw;
+}
+
+.HouseForSale__div h1{
+    text-align: center;
+    color: var(--withe);
+}
+
+.HouseForSale__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+/* tarjetas con los agentes */
+.main__agents{
+
+}
+
+/* vender propiedades */
+.main__sellProperty{
+
+}
+
+/* artículos y noticias */
+.main__news{
+
+}
+
+/* valores */
+.main__values{
+
+}
+
+/* comentarios de los clientes */
+.main__comments{
+
+}
+
+/* pie de página */
+#footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--darkGray);
+    color: var(--ligthGray);
+    font-size: var(--medium);
+}
+
+.social_media{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 3fr 60px 60px 60px 60px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border-bottom: 1px solid var(--ligthGray);
+}
+.social_media div{
+    border-left: 1px solid var(--ligthGray);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer__links a{
+    color: var(--ligthGray);
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 10px;
+}
+
+.information{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.properties{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.locations{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.useful_links{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.about_casaroyal{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.about_casaroyal a{
+    font-weight: 600;
+}
