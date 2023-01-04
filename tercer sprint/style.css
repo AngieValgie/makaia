@@ -27,6 +27,8 @@ body{
     background-color: var(--withe);
 }
 
+
+
 /* barra de navegación */
 .nav{
     display: flex;
@@ -50,11 +52,20 @@ body{
     cursor: pointer;
 }
 
+
+#main{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
 /* buscador de propiedades */
 .main__searcher{
     color: var(--withe);
     background-image: url(img/hero-bg-image.jpg);
     background-repeat: no-repeat;
+    background-position-x: -160px;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -67,10 +78,16 @@ body{
     font-size: var(--large);
 }
 
+
+
+
 /* targetas con las propiedades */
 .main__properties{
 
 }
+
+
+
 
 /* casa en venta */
 .main__hotDeal{
@@ -93,12 +110,16 @@ body{
     background-image: url(img/house4.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 200px;
+    background-size: cover;
+    min-height: 100px;
+    min-width: 400px;
 }
 
 .HouseForSale__div{
     background-color: var(--darkGray);
     width: 90vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 .HouseForSale__div h1{
@@ -115,30 +136,63 @@ body{
     align-items: center;
 }
 
+@media (max-width: 500px) {
+    .HouseForSale{
+        height: 1200px;
+    }
+
+    .HouseForSale__div{
+        flex-direction: column;   
+    }
+
+    .HouseForSale figure{
+        min-width: fit-content;
+        min-height: 250px;
+    }
+}
+
+
+
+
 /* tarjetas con los agentes */
 .main__agents{
 
 }
+
+
+
 
 /* vender propiedades */
 .main__sellProperty{
 
 }
 
+
+
+
 /* artículos y noticias */
 .main__news{
 
 }
+
+
+
 
 /* valores */
 .main__values{
 
 }
 
+
+
+
 /* comentarios de los clientes */
 .main__comments{
 
 }
+
+
+
 
 /* pie de página */
 #footer{
