@@ -29,6 +29,25 @@ body{
 
 
 
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: none; /* zxdcjkghjklkjkhgyftdf */
+    justify-content: center;
+    align-items: center;
+    background-color: #8c8c8c8d;
+    position: fixed;
+    
+}
+.cardModal{
+    background-color: var(--withe);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
 /* barra de navegación */
 .nav{
     display: flex;
