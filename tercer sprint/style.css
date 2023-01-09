@@ -4,7 +4,7 @@
     --blue: #2a41e8;
     --orange: #ff5e14;
     --ligthGray: #8c8c8c;
-    --darkGray: #151515;
+    --darkGray: #292929;
     --black: #111111;
     --withe: #ffffff;
     --veryLigthGray: #f3f3f3;
@@ -28,11 +28,11 @@ body{
 }
 
 
-
+/* Ventana con la información de las propiedades */
 .modal{
     width: 100vw;
     height: 100vh;
-    display: none; /* zxdcjkghjklkjkhgyftdf */
+    display: flex; 
     justify-content: center;
     align-items: center;
     background-color: #8c8c8c8d;
@@ -71,7 +71,6 @@ body{
     cursor: pointer;
 }
 
-
 #main{
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
@@ -92,9 +91,40 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.main__searcher--div{
+    width: 90%;
+}
 .main__searcher--div h1{
     font-size: var(--large);
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--veryLigthGray);
+    padding: 20px;
+    border-radius: 3px;
+}
+.main__searcher--div select{
+    width: 138px;
+    height: 36px;
+    border: none;
+    padding: 3px 5px 0 5px;
+    border-radius: 4px;
+}
+.main__searcher--div input{
+    width: 138px;
+    height: 37px;
+    border: none;
+    padding: 2px 5px 0 5px;
+    border-radius: 4px;
+}
+.main__searcher--div button{
+    width: 138px;
+    height: 36px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--withe);
+    border-radius: 4px;
 }
 
 
@@ -112,61 +142,125 @@ body{
 .main__hotDeal{
     height: 100vh;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     text-align: left;
     justify-content: center;
     align-items: center;
 }
-
 .main__hotDeal p{
     font-size: var(--small);
     color: var(--ligthGray);
     font-weight: 500;
     letter-spacing: 1px;
 }
+.main__hotDeal span{
+    font-weight: 400;
+    font-size: var(--large);
+}
+.main__hotDeal h1{
+    font-size: var(--large);
+}
 
-.HouseForSale figure{
-    background-image: url(img/house4.jpg);
+.figure__background{
+    background-image: url(img/isaac-benhesed-249429-unsplash-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    padding: 30px;
+    align-items: end;
     min-height: 100px;
     min-width: 400px;
 }
+.figure__background button{
+    width: 116px;
+    height: 34px;
+    border: none;
+    font-weight: 500;
+    border-radius: 3px;
+    color: var(--blue);
+}
 
+.HouseForSale{
+    margin-top: 20px;
+}
 .HouseForSale__div{
     background-color: var(--darkGray);
     width: 90vw;
     display: flex;
-    justify-content: space-between;
 }
-
 .HouseForSale__div h1{
     text-align: center;
     color: var(--withe);
+    font-weight: 500;
+    font-size: var(--large);
 }
-
 .HouseForSale__info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     padding: 20px 10px;
+    width: 100%;
     align-items: center;
 }
+.HouseForSale__info button{
+    color: var(--withe);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 25px;
+    text-align: center;
+    background-color: var(--orange);
+}
+.HouseForSale__infoContainer{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 
-@media (max-width: 500px) {
+.infoIconsForSale{
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.infoIconsForSale img{
+    width: 75px;
+}
+
+@media (max-width: 780px) {
+    .main__searcher--div{
+        flex-direction: row;
+    }
+
+    /* casa en venta */
     .HouseForSale{
         height: 1200px;
     }
 
     .HouseForSale__div{
-        flex-direction: column;   
+        flex-direction: column;  
+        background-color: #292929; 
     }
 
-    .HouseForSale figure{
+    .figure__background{
         min-width: fit-content;
         min-height: 250px;
+    }
+
+    .HouseForSale__info{
+        width: fit-content;
+        align-self: center;
+    }
+
+    .HouseForSale__infoContainer{
+        padding: 20px 0;
     }
 }
 

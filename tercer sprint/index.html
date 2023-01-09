@@ -17,7 +17,7 @@
             <h3>hubicación Larga</h3>
             <p>Quién arrienda</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae molestiae cumque vel, voluptates praesentium.</p>
-            <button type="button" id="cerrar" class="cerrar">Close</button>
+            <button type="button" id="close" class="close">Close</button>
         </div>
     </section> 
     
@@ -32,7 +32,7 @@
             <div class="main__searcher--div">
                 <h1>Let Us Guide You Home</h1>
                 <p>Find the house of your dreams</p>
-                <form action="" id="form">
+                <form action="" id="form" class="form">
                     <select id="category">
                         <option value="">Seleccione</option>
                         <option value="1">Abarrotes</option>
@@ -47,6 +47,8 @@
                         <option value="3">Legumbres</option>
                     </select>
                     <input type="search" name="" id="" placeholder="Search for properties, suburbs, or keywords...">
+
+                    <button type="submit" id="findProperties">FIND PROPERTIES</button>
                 </form>
             </div>
         </section>
@@ -63,17 +65,19 @@
             <h1>Hot <span>Deal</span></h1>
             <div class="HouseForSale">
                 <div class="HouseForSale__div">
-                    <figure>
-                        <button>Photos (5)</button>
+                    <figure class="figure__background">
+                        <button type="button">Photos (5)</button>
                     </figure>
-                    <div class="HouseForSale__info">
-                        <p>Residential Towe For Rent</p>
-                        <h1>15 Apartments of Type B</h1>
-                        <p>Los Angeles, CA</p>
-                        <button>From $1,700.00 Per Month</button>
-                        <img src="img/Video Button.png" alt="">
-                        <div class="infoIconsForSale">
-                            <figure>
+                    <div class="HouseForSale__infoContainer">
+                        <div class="HouseForSale__info">
+                            <p>Residential Towe For Rent</p>
+                            <h1>15 Apartments of Type B</h1>
+                            <p>Los Angeles, CA</p>
+                            <button>From $1,700.00 Per Month</button>
+                            <img src="img/Video Button.png" alt="">
+                        </div>
+                        <div>
+                            <figure class="infoIconsForSale">
                                 <img src="img/Area Size.svg" alt="">
                                 <img src="img/Beds.svg" alt="">
                                 <img src="img/Baths.svg" alt="">
