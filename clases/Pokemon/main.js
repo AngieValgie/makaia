@@ -7,6 +7,15 @@ let altura = "";
 let experiencia = "";
 let img = "";
 
+let url = "https://pokeapi.co/api/v2/pokemon/700/";
+const getpokemon = async () => {
+  const response = await fetch(url);
+  console.log('hola');
+  const data = await response.json();
+  console.log(data);
+  return data;
+}
+
 const renderPoke = () => {
   CardsContainer.innerHTML = "";
   CardsContainer.innerHTML += `
@@ -29,7 +38,8 @@ const renderPoke = () => {
    `;
 };
 
-const InfoPoke = (data) => {
+const InfoPoke = async () => {
+  const data = await getpokemon()
   habilidades = data.abilities;
   nombre = data.forms[0].name;
   peso = data.weight;
@@ -39,10 +49,13 @@ const InfoPoke = (data) => {
   renderPoke();
 };
 
+InfoPoke();
+
 //Hacemos un llamado a la api
-let url = "https://pokeapi.co/api/v2/pokemon/700/";
-fetch(url)
-  .then((response) => {
+
+
+
+  /* .then((response) => {
     return response.json();
   })
   .then((data) => { //resultado de .JSON
@@ -53,4 +66,4 @@ fetch(url)
   })
   .finally(() => {
     console.log("Termine");
-  });
+  }); */

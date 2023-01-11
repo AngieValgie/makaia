@@ -353,7 +353,7 @@ body{
     min-height: 100px;
     min-width: 400px;
 }
-.figure__background button{
+.buttonLigth{
     width: 106px;
     height: 24px;
     font-size: var(--small);
@@ -418,47 +418,6 @@ body{
     width: 75px;
 }
 
-@media (max-width: 780px) {
-    .propertieSec1Modal{
-        min-width: 300px;
-
-    }
-
-    .cardModal{
-        flex-direction: column;
-    }
-
-    .main__searcher--div{
-        flex-direction: row;
-    }
-
-    .main__properties--Card{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    /* casa en venta */
-   
-
-    .HouseForSale__div{
-        flex-direction: column;  
-        background-color: #292929; 
-    }
-
-    .figure__background{
-        min-width: fit-content;
-        min-height: 250px;
-    }
-
-    .HouseForSale__info{
-        width: fit-content;
-        align-self: center;
-    }
-
-    .HouseForSale__infoContainer{
-        padding: 20px 0;
-    }
-}
 
 
 
@@ -498,9 +457,34 @@ body{
 }
 
 
+
+
+
 /* tarjetas con los agentes */
 .main__agents{
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+.main__agentsCards{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.main__agentsCard{
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 3px;
+    background-color: var(--withe);
+}
+.main__agentsCard img{
+    max-width: 300px;
+    border-radius: 3px;
 }
 
 
@@ -541,9 +525,128 @@ body{
 
 
 
+
+/*  */
+.main_realEstate{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+.main_realEstateCards{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.main_realEstateCard{
+    width: 290px;
+    height: 340px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--withe);
+}
+
+.verified{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.verified figure{
+    gap: 4px;
+    display: flex;
+    width: 220px;
+    align-items: center;
+}
+.verified figure img{
+    width: 10px;
+}
+
+.main_realEstateCard img:nth-child(2){
+    width: 170px;
+}
+.flagText{
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flagText img{
+    width: 16px;
+}
+.main_realEstateCard label{
+    border: none;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: var(--blue);
+    border-radius: 3px;
+    font-size: var(--small);
+    background-color: var(--veryLigthGray);
+}
+
+
+
+
 /* artículos y noticias */
 .main__news{
-
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.newsCards{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.newCard{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--withe);
+    width: 320px;
+    margin-top: 10px;
+}
+.newCard figure{
+    min-height: 220px;
+    min-width: 280px;
+    background-image: url(img/house9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.newCardDiv1{
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.newCardDiv1 label{
+    width: fit-content;
+    padding: 3px 20px;
+    border-radius: 3px;
+    color: var(--withe);
+    background-color: var(--blue);
+}
+.newCardDiv1 h1{
+    margin-bottom: 15px;
+}
+.newCardDiv2{
+    gap: 5px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -559,9 +662,47 @@ body{
 
 /* comentarios de los clientes */
 .main__comments{
-    margin-bottom: 10px;
+    height: 90vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    color: var(--withe);
+    background-image: url(img/testimonials-bg-1.jpg);
 }
-
+.main__comments p:first-child{
+    color: var(--withe);
+}
+.commentsP{
+    font-size: 20px;
+}
+.main__comments h1{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.main__commentsDiv{
+    width: 100%;
+    display: flex;
+    margin-top: 170px;
+    align-self: center;
+    justify-content: space-between;
+}
+.commentsdiv1 img{
+    width: 190px;
+}
+.commentsdiv2{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.commentsdiv2 div{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(--blue);
+}
 
 
 
@@ -663,5 +804,65 @@ body{
     }
     .main__sellProperty--info h1{
         font-size: 40px;
+    }
+
+    .main__commentsDiv{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .propertieSec1Modal{
+        min-width: 300px;
+
+    }
+
+    .cardModal{
+        flex-direction: column;
+    }
+
+    .main__searcher--div{
+        flex-direction: row;
+    }
+
+    .main__properties--Card{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    /* casa en venta */
+    .HouseForSale__div{
+        flex-direction: column;  
+        background-color: #292929; 
+    }
+
+    .figure__background{
+        min-width: fit-content;
+        min-height: 250px;
+    }
+
+    .HouseForSale__info{
+        width: fit-content;
+        align-self: center;
+    }
+
+    .HouseForSale__infoContainer{
+        padding: 20px 0;
+    }
+
+    .main__agentsCards .main__agentsCard:nth-child(2){
+        display: none;
+    }
+    
+    .main__agentsCards .main__agentsCard:nth-child(3){
+        display: none;
+    }
+
+
+    .newCard{
+        width: 100%;
+        margin-top: 10px;
     }
 }
