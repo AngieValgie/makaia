@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans:wght@400;700&family=Fugaz+One&family=Lobster&family=Poppins:wght@300;400;500&family=Roboto:wght@300&family=Space+Grotesk:wght@500&family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans:wght@400;700&family=Fugaz+One&family=Josefin+Sans:wght@300&family=Lobster&family=Poppins:wght@300;400;500&family=Roboto:wght@300&family=Space+Grotesk:wght@500&family=Volkhov:wght@700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --darkGray: hsl(0, 0%, 55%);
+    --veryDarkGray: hsl(0, 0%, 41%);
+    --large: 30px;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif; /* este */
+}
+
+/* barra de navegación */
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav li{
+    list-style: none;
+    font-family: 'Alata', sans-serif;
+}
+
+
+/* primera sección */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--White);
+    height: 100vh;
+    padding: 0 130px 100px 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/desktop/image-hero.jpg);
+}
+
+.textoContainer{
+    width: 500px;
+    padding: 30px;
+    font-size: 50px;
+    margin-top: 50px;
+    border: 2px solid var(--White);
+}
+
+
+/* sección2, texto descriptivo e imagen */
+.section1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.sectiondiv{
+    padding: 40px;
+}
+
+.section1 img{
+    width: 500px;
+}
+
+.sectiondiv2{
+    width: 400px;
+    padding: 40px;
+    background-color: var(--White);
+}
+
+.sectiondiv2 h1{
+    margin-bottom: 20px;
+    font-size: var(--large);
+}
+
+/* cards */
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.section2txt{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.section2txt h1{
+    font-size: 30px;
+}
+.button1, .button2{
+    margin-top: 2px;
+    height: 30px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 1px 30px;
+    font-family: 'Alata', sans-serif;
+    border: 2px solid var(--Black);
+    background-color: var(--White);
+}
+
+.button2{
+    display: none;
+}
+
+.section2 div{
+    width: 70%;
+    gap: 21px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section2 figure{
+    color: var(--White);
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+    .card1{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-deep-earth.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card2{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-night-arcade.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card3{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-soccer-team.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card4{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-grid.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card5{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-from-above.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card6{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-pocket-borealis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card7{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-curiosity.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card8{
+        width: 200px;
+        height: 300px;
+        background-image: url(./images/desktop/image-fisheye.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+/* pie de página */
+footer{
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--White);
+    background-color: var(--Black);
+}
+
+.footerdiv1, .footerdiv2{
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footerdiv1 img{
+    width: 170px;
+}
+
+.socialMedia1, .socialMedia2{
+    gap: 15px;
+    display: flex;
+}
+.socialMedia1{
+    display: none;
+}
+
+
+footer ul{
+    gap: 20px;
+    display: flex;
+    list-style: none;
+}
+
+@media (max-width: 720px) {
+    header{
+    align-items: center;
+    padding: 0 30px 10px 30px;
+    background-color: antiquewhite;
+    }
+
+    .nav ul{
+        display: none;
+    }
+
+    .textoContainer{
+        width: 340px;
+        font-size: 40px;
+        margin-top: 50px;
+        border: 2px solid var(--White);
+    }
+
+    .section2 div{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section1{
+        align-items: center;
+    }
+
+    .sectiondiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section1 img{
+        width: 90%;
+    }
+
+    .button1{
+        display: none;
+    }
+
+    .button2{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .card1{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-deep-earth.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card2{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-night-arcade.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card3{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-soccer-team.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card4{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-grid.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card5{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-from-above.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card6{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-pocket-borealis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card7{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-curiosity.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card8{
+        width: 95%;
+        height: 160px;
+        background-image: url(./images/mobile/image-fisheye.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 20px;
+        height: 400px;
+    }
+
+    footer ul{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .footerdiv1{
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -80px;
+    }
+
+    .footerdiv2{
+        height: 10px;
+        margin-bottom: -60px;
+    }
+
+    .socialMedia1 img{
+        width: 25px;
+    }
+
+    .socialMedia1{
+        display: block;
+    }
+
+    .socialMedia2{
+        display: none;
+    }
+}
