@@ -36,6 +36,10 @@
     font-family: 'Alata', sans-serif;
 }
 
+.hamburger{
+    display: none;
+}
+
 
 /* primera sección */
 header{
@@ -68,6 +72,7 @@ header{
 
 .sectiondiv{
     padding: 40px;
+    display: flex;
 }
 
 .section1 img{
@@ -75,6 +80,10 @@ header{
 }
 
 .sectiondiv2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 400px;
     padding: 40px;
     background-color: var(--White);
@@ -240,8 +249,17 @@ footer ul{
     background-color: antiquewhite;
     }
 
+    .nav{
+        width: 90%;
+    }
+
     .nav ul{
         display: none;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
     }
 
     .textoContainer{
@@ -278,6 +296,7 @@ footer ul{
     .button2{
         margin-top: 20px;
         display: block;
+        margin-bottom: 30px;
     }
 
     .card1{
@@ -366,7 +385,7 @@ footer ul{
 
     .footerdiv2{
         height: 10px;
-        margin-bottom: -60px;
+        margin-bottom: -40px;
     }
 
     .socialMedia1 img{
@@ -374,10 +393,12 @@ footer ul{
     }
 
     .socialMedia1{
-        display: block;
+        display: none;
     }
 
     .socialMedia2{
-        display: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 }
