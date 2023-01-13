@@ -5,20 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="/sprints_entregas/cuarto Sprint/css/style.css">
 </head>
 <body>
-    <nav>
 
+    <div id="productosEnElCarrito" class="productosEnElCarrito">
+        
+    </div>
+
+    <nav class="nav">
+        <figure><img src="/sprints_entregas/cuarto Sprint/css/img/Tiendita.svg" alt=""></figure>
+        <div class="nav__div">
+            <div id="location">
+                <span class="material-symbols-outlined">location_on</span>
+                <p id="locationName">Antioquia, Medellín</p>
+            </div>
+            <button class="button btnNav"><img src="/sprints_entregas/cuarto Sprint/css/img/carrito.svg" alt=""><p id="">5</p></button>
+        </div>
     </nav>
 
     <main>
         <section class="banner">
             <h1>¡Adquiere todos tus productos favoritos al mejor precio!</h1>
         </section>
-
+        
         <section id="offers" class="offerS">
-
+            <h1>Ofertas</h1>
+            <div class="offersContainer">
+                <div class="offerCard">
+                    <label id="discount" for="">32% dto.</label>
+                    <div class="offerCardinfo">
+                        <figure><img id="url" src="/sprints_entregas/cuarto Sprint/css/img/pan.svg" alt=""></figure>
+                        <p id="precio">$26.82/kg</p>
+                        <p id="nombre">Bimbo Pan Blanco Grande</p>
+                        <button class="button" type="button">Agregar</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
