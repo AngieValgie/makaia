@@ -10,10 +10,44 @@
     <link rel="stylesheet" href="/sprints_entregas/cuarto Sprint/css/style.css">
 </head>
 <body>
-
-    <div id="productosEnElCarrito" class="productosEnElCarrito">
-
+    <div id="locationSelect" class="locationSelect">
+        <div class="locationSelectDiv">
+            <img id="close" src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg" alt="">
+            <h1>¿Dónde quieres recibir tu pedido?</h1>
+            <p>Para poder ofrecerte productos dentro de tu área, necesitamos tu dirección</p>
+            <div class="addressdiv">
+                <span class="material-symbols-outlined">location_on</span>
+                <select id="address">
+                    <option value="">Elije tu ubicación</option>
+                </select>
+            </div>
+            <button class="button">Guardar</button>
+        </div>
     </div>
+
+    <div id="productsInCart" class="productsInCart">
+        <div class="productsInCartDiv">
+            <div class="deliver">
+                <p>Entregar en: <span>${ciudad}</span></p>
+                <img id="close" src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg" alt="">
+            </div>
+            <div class="productsInCartCard">
+                <div class="puductNamePriceImg">
+                    <img src="" alt="">
+                    <div class="puductNamePrice">
+                        <p class="precio">${precioFinal}</p>
+                        <p class="nombre">${nombre}</p>
+                    </div>
+                </div>
+                <div class="addRemove">
+                    <button>+</button>
+                    <p class="amount">1</p>
+                    <button>-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <nav class="nav">
         <figure><img src="/sprints_entregas/cuarto Sprint/css/img/Tiendita.svg" alt=""></figure>
@@ -34,19 +68,12 @@
         <section id="offers" class="offerS">
             <h1>Ofertas</h1>
             <div class="offersContainer">
-                <div class="offerCard">
-                    <label id="discount" for="">32% dto.</label>
-                    <div class="offerCardinfo">
-                        <figure><img id="url" src="/sprints_entregas/cuarto Sprint/css/img/pan.svg" alt=""></figure>
-                        <p id="precio">$26.82/kg</p>
-                        <p id="nombre">Bimbo Pan Blanco Grande</p>
-                        <button class="button" type="button">Agregar</button>
-                    </div>
+                <div id="offerCard" class="offerCard">
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="/sprints_entregas/cuarto Sprint/js/main.js"></script>
+    <script src="/sprints_entregas/cuarto Sprint/js/main.js" type="module"></script>
 </body>
 </html>

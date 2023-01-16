@@ -31,6 +31,53 @@ body{
     background-color: var(--veryLigthGray)
 }
 
+/* modal de cada producto */
+
+/* modal de la dirección */
+.locationSelect{
+    width: 100vw;
+    height: 125vh;
+    display: flex; 
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: #8c8c8c8d;
+}
+
+.locationSelectDiv{
+    gap: 20px;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--withe);
+}
+
+.addressdiv{
+    display: flex;
+    padding: 7px 10px;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid var(--veryLigthGray);
+}
+
+.addressdiv select{
+    padding-left: 4px;
+    border: none;
+}
+
+.addressdiv option{
+    border: none;
+}
+
+.locationSelectDiv img{
+    width: 40px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+
 /* barra de navegación */
 .nav{
     width: 90%;
@@ -53,19 +100,21 @@ body{
 
 #location{
     display: flex;
+    cursor: pointer;
     padding-right: 10px;
     border-right: 1px solid rgba(0, 0, 0, 0.234);
 }
 
 .btnNav{
+    width: 80px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 35px;
 }
 
 .btnNav p{
+    cursor: pointer;
     padding-top: 2px;
     margin-left: 5px;
 }
@@ -100,11 +149,26 @@ main{
     background-position: center;
 }
 
+#offers h1{
+    text-align: center;
+}
+
 .offersContainer{
+    width: 100%;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .offerCard{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offerCardiv{
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -127,11 +191,11 @@ main{
     background-color: var(--withe);
 }
 
-#precio{
+.precio{
     font-weight: 600;
 }
 
-#nombre{
+.nombre{
     font-size: 12px;
     margin-bottom: 30px
 }
@@ -139,6 +203,7 @@ main{
 .button{
     padding: 10px 0;
     border: none;
+    cursor: pointer;
     border-radius: 8px;
     color: var(--withe);
     background-color: var(--green);
