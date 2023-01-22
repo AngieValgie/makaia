@@ -1,79 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="/sprints_entregas/cuarto Sprint/css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="/sprints_entregas/cuarto Sprint/css/style.css"
+    />
+  </head>
+
+  <body>
     <div id="locationSelect" class="locationSelect">
-        <div class="locationSelectDiv">
-            <img id="close" src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg" alt="">
-            <h1>¿Dónde quieres recibir tu pedido?</h1>
-            <p>Para poder ofrecerte productos dentro de tu área, necesitamos tu dirección</p>
-            <div class="addressdiv">
-                <span class="material-symbols-outlined">location_on</span>
-                <select id="address">
-                    <option value="">Elije tu ubicación</option>
-                </select>
-            </div>
-            <button class="button">Guardar</button>
+      <div class="locationSelectDiv">
+        <img
+          id="close"
+          src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg"
+          alt=""
+        />
+        <h1>¿Dónde quieres recibir tu pedido?</h1>
+        <p>
+          Para poder ofrecerte productos dentro de tu área, necesitamos tu
+          dirección
+        </p>
+        <div class="addressdiv">
+          <span class="material-symbols-outlined">location_on</span>
+          <select id="address">
+            <option value="">Elije tu ubicación</option>
+          </select>
         </div>
+        <button class="button">Guardar</button>
+      </div>
     </div>
 
     <div id="productsInCart" class="productsInCart">
-        <div class="productsInCartDiv">
-            <div class="deliver">
-                <p>Entregar en: <span>${ciudad}</span></p>
-                <img id="close" src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg" alt="">
-            </div>
-            <div class="productsInCartCard">
-                <div class="puductNamePriceImg">
-                    <img src="" alt="">
-                    <div class="puductNamePrice">
-                        <p class="precio">${precioFinal}</p>
-                        <p class="nombre">${nombre}</p>
-                    </div>
-                </div>
-                <div class="addRemove">
-                    <button>+</button>
-                    <p class="amount">1</p>
-                    <button>-</button>
-                </div>
-            </div>
+      <div class="productsInCartDiv">
+        <div class="deliver">
+          <img
+            id="closeProducts"
+            src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg"
+            alt=""
+          />
         </div>
+
+        <div class="productCard__container">
+          <div class="productCard">
+            <div class="productsInCartCard">
+              <div class="puductNamePriceImg">
+                <img
+                  src="/sprints_entregas/cuarto Sprint/css/img/Family Values Shopping.svg"
+                  alt=""
+                /><!-- <img src="${image}" alt=""> -->
+                <div class="puductNamePrice">
+                  <p class="changePrecio">0</p>
+                  <p class="changeNombre">-</p>
+                </div>
+              </div>
+              <div class="addRemove">
+                <button id="subtractProduct" class="subtractProduct">-</button>
+                <p class="amount">0</p>
+                <button id="sumProduct" class="sumProduct">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerProductsInCart">
+          <p>Vaciar canasta</p>
+
+          <div class="button footerButton">
+            <div class="amount">0</div>
+            <p>Ir a pagar</p>
+            <p class="total">$0</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
+    <div id="detallesProducto" class="detallesProducto">
+      <div class="detallesProductodiv">
+        <div class="detallesProductoContainer">
+          <img
+            class="producto"
+            src="/sprints_entregas/cuarto Sprint/css/img/Family Values Shopping.svg"
+            alt=""
+          />
+          <div class="detallesProductoContainerInfo">
+            <img
+              id="cerrarDetallesProducto"
+              src="/sprints_entregas/cuarto Sprint/css/img/cancel.svg"
+              alt=""
+            />
+            <h1 class="nombrecito">Aguacate Hass</h1>
+            <p class="detallesPrecio">· $69.9 /Kg</p>
+            <p class="IVA">Precios con IVA incluido</p>
+            <p>
+              Peso aproximado por pieza, puede variar de acuerdo al peso real.
+            </p>
+
+            <form action="">
+              <label for="">Selecciona la madurez que deseas</label>
+              <select id="">
+                <option value="">Por elegir</option>
+                <option value="1">Maduro (Para hoy)</option>
+                <option value="2">Normal (3-5 días)</option>
+                <option value="3">Verde (7 días)</option>
+                <!-- <option value=""><input type="radio" name="" id="">Por elegir</option> -->
+              </select>
+            </form>
+
+            <div class="addRemuveDetalles">
+              <div class="addRemove">
+                <button id="subtractProduct" class="subtractProduct">-</button>
+                <p class="amount">1</p>
+                <button id="sumProduct" class="sumProduct">+</button>
+              </div>
+
+              <button class="button btnDetalles" type="button">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="carrusel"
+          class="carrusel"
+          style="background-color: black"
+        ></div>
+      </div>
+    </div>
 
     <nav class="nav">
-        <figure><img src="/sprints_entregas/cuarto Sprint/css/img/Tiendita.svg" alt=""></figure>
-        <div class="nav__div">
-            <div id="location">
-                <span class="material-symbols-outlined">location_on</span>
-                <p id="locationName">Antioquia, Medellín</p>
-            </div>
-            <button class="button btnNav"><img src="/sprints_entregas/cuarto Sprint/css/img/carrito.svg" alt=""><p id="">5</p></button>
+      <figure>
+        <img
+          src="/sprints_entregas/cuarto Sprint/css/img/Tiendita.svg"
+          alt=""
+        />
+      </figure>
+      <div class="nav__div">
+        <div id="location">
+          <span class="material-symbols-outlined">location_on</span>
+          <p id="locationName">Antioquia, Medellín</p>
         </div>
+        <button id="carrito" class="button btnNav">
+          <img
+            src="/sprints_entregas/cuarto Sprint/css/img/carrito.svg"
+            alt=""
+          />
+          <p class="amount">1</p>
+        </button>
+      </div>
     </nav>
 
     <main>
-        <section class="banner">
-            <h1>¡Adquiere todos tus productos favoritos al mejor precio!</h1>
-        </section>
-        
-        <section id="offers" class="offerS">
-            <h1>Ofertas</h1>
-            <div class="offersContainer">
-                <div id="offerCard" class="offerCard">
-                </div>
-            </div>
-        </section>
+      <section class="banner">
+        <h1>¡Adquiere todos tus productos favoritos al mejor precio!</h1>
+      </section>
+
+      <section id="offers" class="offerS">
+        <h1>Ofertas</h1>
+        <div class="offersContainer">
+          <div id="offerCard" class="offerCard"></div>
+        </div>
+      </section>
     </main>
 
-    <script src="/sprints_entregas/cuarto Sprint/js/main.js" type="module"></script>
-</body>
+    <script
+      src="/sprints_entregas/cuarto Sprint/js/main.js"
+      type="module"
+    ></script>
+  </body>
 </html>
